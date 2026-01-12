@@ -1,19 +1,19 @@
 const repeatString = require('./repeatString')
 
 describe('repeatString', () => {
-  test.skip('repeats the string', () => {
+  test('repeats the string', () => {
     expect(repeatString('hey', 3)).toEqual('heyheyhey');
   });
-  test.skip('repeats the string many times', () => {
+  test('repeats the string many times', () => {
     expect(repeatString('hello', 10)).toEqual('hellohellohellohellohellohellohellohellohellohello');
   });
-  test.skip('repeats the string 1 time', () => {
+  test('repeats the string 1 time', () => {
     expect(repeatString('hi', 1)).toEqual('hi');
   });
   test('repeats the string 0 times', () => {
     expect(repeatString('bye', 0)).toEqual('');
   });
-  test.skip('handles any non-negative integer for repeat count', function () {
+  test('handles any non-negative integer for repeat count', function () {
     /* This test ensures your function is "generic", meaning the previous
       tests were not completed by hardcoding values for their respective numbers */
     const number = Math.floor(Math.random() * 1000);
