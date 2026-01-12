@@ -3,6 +3,10 @@ const sumAll = function(min, max) {
    const low = Math.min(min, max);
    const high = Math.max(min, max);
 
+   if (low < 0) {
+    return "ERROR";
+   }
+
    for (let i = low; i <= high; i++) {
     sum += i;
     }
